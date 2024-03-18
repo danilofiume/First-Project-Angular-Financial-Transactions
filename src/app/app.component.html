@@ -1,0 +1,10 @@
+<div class="container mt-3">
+  <div class="row justify-content-start">
+    <h1 class="text-center">TRANSAZIONI FINANZIARIE</h1>
+    <div class="col-md-4 mb-3" *ngFor="let trs of lista_transazioni" >
+      <app-lista-transazioni  [transazioni]="trs"></app-lista-transazioni>
+    </div>
+  </div>
+</div>
+
+

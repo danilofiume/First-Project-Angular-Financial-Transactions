@@ -1,0 +1,8 @@
+<div class="card-body">
+    <h5 class="card-title text-uppercase">{{transazione.business}}</h5>
+    <p class="card-text ">{{transazione.name}}</p>
+    <p class="card-text">Account: {{transazione.account}}</p>
+    <p class="card-text">Date: {{transazione.date | date: 'MMM dd,yyyy'}}</p>
+    <p class="card-text">Type: {{transazione.type}}</p>
+    <p class="card-text rounded p-1 " [ngClass]="{'yellow-background fw-bold': transazione.amount > 700}">Amount: {{transazione.amount | currency: 'USD'}}</p>
+</div>
